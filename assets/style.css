@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(2, 3, 19);
+}
+
+.container {
+    margin: 0 auto;
+    width: 50vw;
+}
+
+#seatsContainer {
+    text-align: center;
+}
+    #seatsContainer select {
+        margin-bottom: 20px;
+    }
+
+    .screen {
+        background-color: #fff;
+        box-shadow: 8px 8px 14px inset #ccc;;
+        border: 2px #ccc solid;
+        margin: 0 auto 35px;
+        height: 65px;
+        width: 37%;
+    }
+
+    #seatsContainer .row:nth-of-type(4n) {
+        margin-bottom: 10px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+        .seat {
+            margin: 0 10px 10px 0;
+            width: 10px;
+            height: 10px;
+            background: blueviolet;
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+        }
+
+        .seat.occupied {
+            cursor: initial;
+        }
+
+        .selected {
+            background-color: rgb(100, 182, 230);
+        }
+
+        .occupied {
+            background-color: #ccc;
+        }
+
+    .bill {
+        text-align: center;
+        color: #fff;
+    }
